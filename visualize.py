@@ -3,7 +3,6 @@ Loads up and visualizes one of the models.
 """
 
 import torch as t
-import numpy as np
 import matplotlib.pyplot as plt
 
 from vae import VAEMario

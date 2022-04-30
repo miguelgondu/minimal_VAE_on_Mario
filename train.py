@@ -1,6 +1,5 @@
 """
-This script trains a VAESimple on the Mario
-levels.
+This script trains a VAEMario using early stopping.
 """
 from time import time
 
@@ -59,9 +58,6 @@ def run(
     save_every: int = 20,
     overfit: bool = False,
 ):
-    # Setting up the seeds
-    # torch.manual_seed(seed)
-
     # Defining the name of the experiment
     timestamp = str(time()).replace(".", "")
     comment = f"{timestamp}_mariovae"

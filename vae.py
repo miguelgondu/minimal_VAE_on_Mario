@@ -128,11 +128,7 @@ class VAEMario(nn.Module):
         n_cols=10,
         sample=False,
         ax=None,
-        return_imgs=False,
     ):
-        if self.z_dim != 2:
-            return np.zeros((16 * 14, 16 * 14, 3))
-
         z1 = np.linspace(*x_lims, n_cols)
         z2 = np.linspace(*y_lims, n_rows)
 
@@ -164,8 +160,5 @@ class VAEMario(nn.Module):
 
         if ax is not None:
             ax.imshow(final_img, extent=[*x_lims, *y_lims])
-
-        if return_imgs:
-            return final_img, images
 
         return final_img
