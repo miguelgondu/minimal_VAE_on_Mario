@@ -19,3 +19,13 @@ python visualize.py
 ```
 
 to get a look at this example's latent space.
+
+## Using the simulator
+
+I recently added a `simulator.jar` that lets you run levels directly from latent space. To do so, you'll need a version of Java that is above 8 (we used `OpenJDK 15.0.2`). Running
+
+```
+python simulator.py
+```
+
+should let you play content directly from latent space. Take a look at the functions implemented therein and get creative! The simulator outputs a JSON with telemetrics from the simulation, and if you set `human_player=False` it uses Robin Baumgarten's A star agent.
