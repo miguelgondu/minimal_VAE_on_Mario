@@ -29,3 +29,12 @@ python simulator.py
 ```
 
 should let you play content directly from latent space. Take a look at the functions implemented therein and get creative! The simulator outputs a JSON with telemetrics from the simulation, and if you set `human_player=False` it uses Robin Baumgarten's A star agent.
+
+## Running Bayesian Optimization in latent space
+
+I also include an example of how to run Bayesian Optimization in the latent space of the VAE. In it, I try to maximize the number of jumps. It is built using `gpytorch` and `botorch`, and you can play around with your GP definition in `simple_bayesian_optimization.py`. To run it, just call
+
+```
+python simple_bayesian_optimization.py
+```
+
