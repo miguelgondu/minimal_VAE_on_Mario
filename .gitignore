@@ -5,3 +5,5 @@ __pycache__/
 *.pt
 !example.pt
 
+# Ignoring the plots from vanilla B.O.
+data/plots/

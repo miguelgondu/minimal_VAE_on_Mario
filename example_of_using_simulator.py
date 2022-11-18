@@ -39,6 +39,8 @@ def play_random_levels(n_levels: int = 5):
     one_large_level = torch.hstack([lvl for lvl in levels])
 
     # Playing them.
+    # The agent returns several telemetrics, feel free to
+    # inspect this dict.
     telemetrics = test_level_from_int_tensor(
         one_large_level, human_player=True, visualize=True
     )
