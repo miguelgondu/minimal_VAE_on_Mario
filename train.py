@@ -55,7 +55,7 @@ def run(
     max_epochs: int = 500,
     batch_size: int = 64,
     lr: int = 1e-3,
-    save_every: int = 20,
+    save_every: int = None,
     overfit: bool = False,
 ):
     # Defining the name of the experiment
@@ -98,7 +98,7 @@ def run(
             if not overfit:
                 n_without_improvement += 1
 
-        if epoch % save_every == 0 and epoch != 0:
+        if save_every is not None and epoch % save_every == 0 and epoch != 0:
             # Saving the model
             print(f"Saving the model at checkpoint {epoch}.")
             torch.save(vae.state_dict(), f"./models/{comment}_epoch_{epoch}.pt")
