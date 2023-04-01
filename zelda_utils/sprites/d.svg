@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="20"
+   height="20"
+   viewBox="0 0 5.2916665 5.2916668"
+   version="1.1"
+   id="svg8"
+   inkscape:export-filename="/Users/migd/Projects/mario_geometry_project/MarioVAE/zelda_utils/sprites/v.png"
+   inkscape:export-xdpi="122.28547"
+   inkscape:export-ydpi="122.28547"
+   sodipodi:docname="d.svg"
+   inkscape:version="1.0.2 (e86c8708, 2021-01-15)">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="28.637016"
+     inkscape:cx="14.994048"
+     inkscape:cy="8.3305127"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.95136px;line-height:1.25;font-family:'CMU Classical Serif';-inkscape-font-specification:'CMU Classical Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#c5e6a6;fill-opacity:1;stroke-width:0.542134"
+       x="0.08947102"
+       y="4.3593516"
+       id="text12"
+       inkscape:export-xdpi="122"
+       inkscape:export-ydpi="122"><tspan
+         sodipodi:role="line"
+         id="tspan10"
+         x="0.08947102"
+         y="4.3593516"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.95136px;font-family:'CMU Classical Serif';-inkscape-font-specification:'CMU Classical Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#c5e6a6;fill-opacity:1;stroke-width:0.542134">v</tspan></text>
+  </g>
+</svg>
