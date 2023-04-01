@@ -393,11 +393,7 @@ if __name__ == "__main__":
     vae.load_state_dict(torch.load(ROOT_DIR / "models" / "zelda_example.pt"))
 
     # Some plots
-    CHAP_6_FIGURES_DIR = Path("/Users/migd/Projects/dissertation/Figures/Chapter_6")
-    plots_dir = CHAP_6_FIGURES_DIR / "zelda_example"
-    plots_dir.mkdir(exist_ok=True)
-
-    vae.random_sample(path_=plots_dir, n_samples=3)
+    vae.random_sample(path_=ROOT_DIR, n_samples=3)
 
     x_lims = (-1, 4)
     y_lims = (-1, 4)
@@ -407,5 +403,5 @@ if __name__ == "__main__":
     ax.axis("off")
 
     plt.tight_layout()
-    plt.savefig(plots_dir / "grid.png", dpi=120, bbox_inches="tight")
+    plt.savefig(ROOT_DIR / "grid.png", dpi=120, bbox_inches="tight")
     plt.close()

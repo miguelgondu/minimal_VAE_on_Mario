@@ -4,6 +4,7 @@ __pycache__/
 # Only keeping the example model, and ignoring the rest.
 *.pt
 !example.pt
+!zelda_example.pt
 
 # Ignoring the plots from vanilla B.O.
 data/plots/
