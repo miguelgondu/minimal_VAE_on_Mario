@@ -39,4 +39,4 @@ ENV DISPLAY :99
 RUN chmod a+x /app/start.sh
 
 # Start the application
-CMD ["./start.sh"]
+CMD ["/app/start.sh"]
