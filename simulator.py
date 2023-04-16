@@ -115,7 +115,7 @@ def test_level_from_z(z: Tensor, vae: VAEMario, human_player: bool = False) -> d
 
 
 if __name__ == "__main__":
-    human_player = True
+    human_player = False
     vae = VAEMario()
     vae.load_state_dict(torch.load("./models/example.pt"))
 
