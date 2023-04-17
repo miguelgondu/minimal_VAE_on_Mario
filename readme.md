@@ -30,6 +30,22 @@ python simulator.py
 
 should let you play content directly from latent space. Take a look at the functions implemented therein and get creative! The simulator outputs a JSON with telemetrics from the simulation, and if you set `human_player=False` it uses Robin Baumgarten's A star agent.
 
+## Using the simulator with Docker
+
+We provide a `dockerfile` with the lightweight requirements for running `simulator.py`. This docker image builds on the Ubuntu 20.04 base, adding Python 3.9, Java 17, and installing `Xvfb` to be able to run `simulator.jar`. This image is already on `docker hub`, so you can either
+
+```bash
+docker pull miguelgondu/mario
+docker run miguelgondu/mario
+```
+
+**or**
+
+```bash
+docker build -t mario .
+docker run mario
+```
+
 ## Running Bayesian Optimization in latent space
 
 I also include an example of how to run Bayesian Optimization in the latent space of the VAE. In it, I try to maximize the number of jumps. It is built using `gpytorch` and `botorch`, and you can play around with your GP definition in `simple_bayesian_optimization.py`. To run it, just call
