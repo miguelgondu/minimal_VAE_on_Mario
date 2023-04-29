@@ -5,4 +5,5 @@ authors:
   given-names: "Miguel"
 title: "Minimal implementation of a Variational Autoencoder on Super Mario Bros"
 version: 0.1
+date-released: 2023-04-29
 url: "https://github.com/miguelgondu/minimal_VAE_on_Mario"

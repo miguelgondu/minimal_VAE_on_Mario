@@ -81,3 +81,16 @@ I also include an example of how to run Bayesian Optimization in the latent spac
 python simple_bayesian_optimization.py
 ```
 
+## Cite this repository!
+
+If you find this code useful, feel free to cite it!
+
+```bibtex
+@software{Gonzalez-Duque:Minimal_VAEMario:2023,
+author = {González-Duque, Miguel},
+title = {{Minimal implementation of a Variational Autoencoder on Super Mario Bros}},
+url = {https://github.com/miguelgondu/minimal_VAE_on_Mario},
+version = {0.1},
+date = {2023-04-29}
+}
+```
