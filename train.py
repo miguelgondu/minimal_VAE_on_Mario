@@ -17,7 +17,13 @@ def fit(
     optimizer: Optimizer,
     data_loader: DataLoader,
     device: str,
-):
+) -> torch.Tensor:
+    """
+    Runs a training epoch: evaluating the model in
+    the data provided by the data_loader, computing
+    the ELBO loss inside the model, and propagating
+    the error backwards to the parameters.
+    """
     model.train()
     running_loss = 0.0
     for (levels,) in data_loader:
@@ -37,7 +43,11 @@ def test(
     test_loader: DataLoader,
     device: str,
     epoch: int = 0,
-):
+) -> torch.Tensor:
+    """
+    Evaluates the current model on the test set,
+    returning the average loss.
+    """
     model.eval()
     running_loss = 0.0
     with torch.no_grad():
@@ -58,6 +68,15 @@ def run(
     save_every: int = None,
     overfit: bool = False,
 ):
+    """
+    Trains a VAEMario on the dataset for the provided hyperparameters.
+
+    This training uses early stopping with a patience of 25 epochs,
+    by which we mean that we maintain the model with lowest test loss
+    and, if we don't see any improvement on it for 25 epochs in a row,
+    we stop the training. The model can be forced to overfit if you
+    pass overfit=True.
+    """
     # Defining the name of the experiment
     timestamp = str(time()).replace(".", "")
     comment = f"{timestamp}_mariovae"

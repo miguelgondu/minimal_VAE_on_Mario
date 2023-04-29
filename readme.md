@@ -30,6 +30,33 @@ python simulator.py
 
 should let you play content directly from latent space. Take a look at the functions implemented therein and get creative! The simulator outputs a JSON with telemetrics from the simulation, and if you set `human_player=False` it uses Robin Baumgarten's A star agent.
 
+### Troubleshooting in remote servers/containers
+
+If you are working on a remote server/dev container, you might face the following issue:
+
+```
+Exception in thread "main" java.awt.HeadlessException: 
+No X11 DISPLAY variable was set,
+but this program performed an operation which requires it.
+```
+
+This happens because the Java simulator is expecting a screen! A way to solve this is by installing a virtual frame buffer. In Ubuntu, this can be achieved with
+
+```
+# Install a virtual frame buffer
+apt-get install xvfb
+```
+
+and then run
+
+```
+# Export a display enviroment variable
+export DISPLAY=99
+
+# Run the virtual frame buffer in the background.
+Xvfb :99 -screen 0 1366x768x24 -ac +extension GLX +render -noreset &
+```
+
 ## Using the simulator with Docker
 
 We provide a `dockerfile` with the lightweight requirements for running `simulator.py`. This docker image builds on the Ubuntu 20.04 base, adding Python 3.9, Java 17, and installing `Xvfb` to be able to run `simulator.jar`. This image is already on `docker hub`, so you can either
